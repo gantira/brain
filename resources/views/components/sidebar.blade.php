@@ -5,7 +5,7 @@
 <div class="mb-4">
     <div class="text-secondary d-block mb-2">Band</div>
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">Create</a>
+        <a href="{{ route('bands.create') }}" class="list-group-item list-group-item-action">Create</a>
         <a href="#" class="list-group-item list-group-item-action">Table</a>
     </div>
 </div>
