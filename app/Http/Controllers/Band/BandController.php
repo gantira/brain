@@ -10,6 +10,12 @@ use Illuminate\Support\Str;
 
 class BandController extends Controller
 {
+    public function table()
+    {
+        return view('bands.table', [
+            'bands' => Band::latest()->paginate(16)
+        ]);
+    }
     public function create()
     {
         return view('bands.create', [

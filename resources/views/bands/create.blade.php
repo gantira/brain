@@ -5,14 +5,15 @@
         $(document).ready(function() {
             $('.select2multiple').select2();
         });
+
     </script>
 @endpush
 
 @section('content')
+    @include('alert')
     <div class="card">
         <div class="card-header">New Band</div>
         <div class="card-body">
-            @include('alert')
             <form action="{{ route('bands.create') }}" method="post" enctype="multipart/form-data">
                 @csrf
 
